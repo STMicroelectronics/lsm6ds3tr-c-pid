@@ -5,7 +5,7 @@ Sensor driver for LSM6DS3TR-C sensor written in C programming language. This rep
 In order to `clone` the complete content of the repository folder, use the command:
 
 ```
-git clone https://github.com/STMicroelectronics/LSM6DS3TR-C/
+git clone https://github.com/STMicroelectronics/LSM6DS3TR-C-PID/
 ```
 
 Some examples of driver usage can be found [here](https://github.com/STMicroelectronics/STMems_Standard_C_drivers).
