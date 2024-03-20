@@ -185,11 +185,9 @@ typedef struct
 {
 #if DRV_BYTE_ORDER == DRV_LITTLE_ENDIAN
   uint8_t not_used_01              : 5;
-uint8_t func_cfg_en              :
-  3;  /* func_cfg_en + func_cfg_en_b */
+  uint8_t func_cfg_en              : 3;  /* func_cfg_en + func_cfg_en_b */
 #elif DRV_BYTE_ORDER == DRV_BIG_ENDIAN
-uint8_t func_cfg_en              :
-  3;  /* func_cfg_en + func_cfg_en_b */
+  uint8_t func_cfg_en              : 3;  /* func_cfg_en + func_cfg_en_b */
   uint8_t not_used_01              : 5;
 #endif /* DRV_BYTE_ORDER */
 } lsm6ds3tr_c_func_cfg_access_t;
@@ -451,11 +449,9 @@ typedef struct
   uint8_t not_used_01              : 1;
   uint8_t usr_off_w                : 1;
   uint8_t xl_hm_mode               : 1;
-uint8_t den_mode                 :
-  3;  /* trig_en + lvl_en + lvl2_en */
+  uint8_t den_mode                 : 3;  /* trig_en + lvl_en + lvl2_en */
 #elif DRV_BYTE_ORDER == DRV_BIG_ENDIAN
-uint8_t den_mode                 :
-  3;  /* trig_en + lvl_en + lvl2_en */
+  uint8_t den_mode                 : 3;  /* trig_en + lvl_en + lvl2_en */
   uint8_t xl_hm_mode               : 1;
   uint8_t usr_off_w                : 1;
   uint8_t not_used_01              : 1;
@@ -992,21 +988,18 @@ typedef struct
 #define LSM6DS3TR_C_FIFO_STATUS3                 0x3CU
 typedef struct
 {
-uint8_t fifo_pattern             :
-  8;  /* + FIFO_STATUS4(fifo_pattern) */
+  uint8_t fifo_pattern             : 8;  /* + FIFO_STATUS4(fifo_pattern) */
 } lsm6ds3tr_c_fifo_status3_t;
 
 #define LSM6DS3TR_C_FIFO_STATUS4                 0x3DU
 typedef struct
 {
 #if DRV_BYTE_ORDER == DRV_LITTLE_ENDIAN
-uint8_t fifo_pattern             :
-  2;  /* + FIFO_STATUS3(fifo_pattern) */
+  uint8_t fifo_pattern             : 2;  /* + FIFO_STATUS3(fifo_pattern) */
   uint8_t not_used_01              : 6;
 #elif DRV_BYTE_ORDER == DRV_BIG_ENDIAN
   uint8_t not_used_01              : 6;
-uint8_t fifo_pattern             :
-  2;  /* + FIFO_STATUS3(fifo_pattern) */
+  uint8_t fifo_pattern             : 2;  /* + FIFO_STATUS3(fifo_pattern) */
 #endif /* DRV_BYTE_ORDER */
 } lsm6ds3tr_c_fifo_status4_t;
 
