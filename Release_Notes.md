@@ -30,7 +30,20 @@ This directory contains the LSM6DS3TR-C component drivers.
 # Update history
 
 ::: {.collapse}
-<input type="checkbox" id="collapse-section8" checked aria-hidden="true">
+<input type="checkbox" id="collapse-section9" checked aria-hidden="true">
+<label for="collapse-section9" aria-hidden="true">V2.2.3 / 08-Oct-2026</label>
+<div>
+
+## Main changes
+
+- Fix gcc and clang compilation warnings
+- Fix parameter names to stmdev read/write/deleay functions
+
+##
+
+</div>
+
+<input type="checkbox" id="collapse-section8" aria-hidden="true">
 <label for="collapse-section8" aria-hidden="true">V2.2.2 / 18-Mar-2026</label>
 <div>
 
